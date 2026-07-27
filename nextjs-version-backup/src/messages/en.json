@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "The Brunch Break — Brunch, Fit Bakery & Coffee in Arrecife, Lanzarote",
+    "description": "The Brunch Break is a brunch café in Arrecife, Lanzarote. Artisan bakery, specialty coffee and fit dishes in a space designed to pause your day. Book or order to go.",
+    "keywords": "brunch Lanzarote, brunch Arrecife, cafe Lanzarote, breakfast Arrecife, fit bakery Lanzarote, coffee shop Canary Islands, The Brunch Break"
+  },
+  "nav": {
+    "story": "Our Story",
+    "philosophy": "Philosophy",
+    "specialties": "Specialties",
+    "gallery": "Gallery",
+    "menu": "Menu",
+    "reviews": "Reviews",
+    "instagram": "Instagram",
+    "location": "Find Us",
+    "contact": "Contact",
+    "menuCta": "View menu",
+    "reserveCta": "Book a table"
+  },
+  "hero": {
+    "eyebrow": "Arrecife · Lanzarote",
+    "headlineWords": ["Your", "brunch,", "your", "moment."],
+    "subtitle": "Artisan bakery, specialty coffee and fit dishes in the heart of Arrecife. A place to pause your day, slowly.",
+    "ctaMenu": "View the menu",
+    "ctaContact": "Book a table",
+    "scrollHint": "Scroll to discover"
+  },
+  "story": {
+    "eyebrow": "Our story",
+    "title": "We started with a simple idea",
+    "paragraphs": [
+      "The Brunch Break was born in Arrecife with one obsession: turning brunch into a ritual, not a rush. Every table is a pause; every dish, a reason to stay a little longer.",
+      "From the first coffee to the last cake in our display case, everything is thought through and baked with the same care: real ingredients, our own recipes, and a warm space where time moves differently."
+    ],
+    "founderLabel": "Founder & CEO",
+    "founderName": "Miss Loan Ho",
+    "founderRole": "Creator of concepts, brands and experiences",
+    "stats": [
+      { "value": "7:30–17:00", "label": "Every day" },
+      { "value": "11K+", "label": "Instagram community" },
+      { "value": "100%", "label": "Own recipes" }
+    ]
+  },
+  "philosophy": {
+    "eyebrow": "Philosophy",
+    "title": "Eating well, without giving up pleasure",
+    "intro": "Fit doesn't mean bland. Our kitchen balances real ingredients, bakery technique and a touch of indulgence that never apologizes.",
+    "pillars": [
+      {
+        "title": "Real ingredients",
+        "description": "Fresh produce, from local suppliers whenever possible, with no shortcuts or ultra-processed food."
+      },
+      {
+        "title": "Baked in-house",
+        "description": "Artisan bakery from early morning: fermented doughs, cakes and pastries fresh out of our own oven."
+      },
+      {
+        "title": "Fit balance",
+        "description": "Dishes designed to make you feel good: protein, fiber and flavor, without sacrificing either."
+      },
+      {
+        "title": "A ritual of pause",
+        "description": "A space designed to disconnect: natural light, plants, and time to enjoy without watching the clock."
+      }
+    ]
+  },
+  "specialties": {
+    "eyebrow": "Specialties",
+    "title": "What makes us The Brunch Break",
+    "items": [
+      {
+        "title": "Signature brunch",
+        "description": "Eggs, toasts and original combinations that reinvent classic brunch with a Canarian accent."
+      },
+      {
+        "title": "Fit & Go",
+        "description": "Light bowls and lunches to go, ready between 8:30 and 15:00, made for your pace."
+      },
+      {
+        "title": "Bakery & Coffee",
+        "description": "Specialty coffee and pastries baked in-house every single day."
+      },
+      {
+        "title": "Catering & Events",
+        "description": "We bring brunch to your celebrations and private events, fully tailored."
+      }
+    ]
+  },
+  "featured": {
+    "eyebrow": "Featured products",
+    "title": "Straight from our display case",
+    "products": [
+      {
+        "name": "Seasonal donuts",
+        "tag": "Party Donuts",
+        "description": "Limited editions, original glazes and flavors that change with the calendar."
+      },
+      {
+        "name": "Fit&Go Bowl",
+        "tag": "Fit lunches",
+        "description": "Protein, seasonal vegetables and our own dressing. Ready to go in minutes."
+      },
+      {
+        "name": "Signature toasts",
+        "tag": "Brunch",
+        "description": "Our own sourdough bread, seasonal toppings and display-case presentation."
+      },
+      {
+        "name": "Specialty coffee",
+        "tag": "Bakery & Coffee",
+        "description": "Selected beans, careful extraction and plant-based milks available."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "A look into our everyday",
+    "subtitle": "Real moments from the dining room, bar and display case — the brand imagery we share every day on Instagram.",
+    "cta": "Follow us on Instagram"
+  },
+  "menu": {
+    "eyebrow": "The menu",
+    "title": "Everything we bake, serve and prepare",
+    "description": "Our full menu lives in an always up-to-date smart menu: prices, allergens and availability, daily.",
+    "categories": [
+      { "name": "Brunch", "description": "Eggs, toasts and signature dishes" },
+      { "name": "Fit & Go", "description": "Healthy bowls and lunches" },
+      { "name": "Bakery", "description": "Pastries and daily baking" },
+      { "name": "Coffee", "description": "Specialty coffee and drinks" }
+    ],
+    "ctaLabel": "Open the full menu",
+    "ctaNote": "Opens in a new tab · smartmenu.agorapos.com"
+  },
+  "reviews": {
+    "eyebrow": "Reviews",
+    "title": "What people who've visited say",
+    "items": [
+      {
+        "quote": "The perfect spot for an unhurried breakfast. The fit brunch is delicious and you can taste the care in every dish.",
+        "author": "Regular customer",
+        "source": "Google"
+      },
+      {
+        "quote": "Beautiful atmosphere, specialty coffee and a display case that's hard to resist. We always come back when we're in Lanzarote.",
+        "author": "Island visitor",
+        "source": "Instagram"
+      },
+      {
+        "quote": "Great for working in the morning with good coffee nearby. The service is friendly and quick.",
+        "author": "Local customer",
+        "source": "Google"
+      }
+    ],
+    "placeholderNote": "Sample reviews — replace with real, verified reviews (Google Business, TripAdvisor) before publishing."
+  },
+  "instagram": {
+    "eyebrow": "Instagram",
+    "title": "Follow along",
+    "handle": "@the_brunch_break",
+    "followers": "11K+ followers",
+    "cta": "Open Instagram",
+    "placeholderNote": "Gallery ready to be swapped with real images and videos authorized by the owner of @the_brunch_break."
+  },
+  "location": {
+    "eyebrow": "Find us",
+    "title": "We're waiting for you in Arrecife",
+    "addressLabel": "Address",
+    "address": "Arrecife, Lanzarote, Canary Islands, Spain",
+    "addressNote": "Exact address pending confirmation — replace with the full street address and number.",
+    "hoursLabel": "Hours",
+    "hours": "Monday to Sunday · 7:30 – 17:00",
+    "mapCta": "View on Google Maps"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's talk",
+    "subtitle": "Reservations, catering, events, or just to say hi — we're one message away.",
+    "whatsappLabel": "WhatsApp",
+    "whatsappNote": "Number pending client confirmation",
+    "emailLabel": "Email",
+    "emailNote": "Email pending client confirmation",
+    "phoneLabel": "Phone",
+    "phoneNote": "Phone number pending client confirmation",
+    "instagramLabel": "Instagram",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send message",
+      "success": "Thank you! We'll get back to you as soon as possible.",
+      "namePlaceholder": "What's your name?",
+      "emailPlaceholder": "you@email.com",
+      "messagePlaceholder": "Tell us what you need..."
+    }
+  },
+  "footer": {
+    "tagline": "Your brunch, your moment.",
+    "rights": "All rights reserved.",
+    "madeWith": "Designed calmly in Lanzarote.",
+    "legalLinks": "Legal",
+    "privacy": "Privacy policy",
+    "cookies": "Cookie policy",
+    "legalNotice": "Legal notice",
+    "backToTop": "Back to top"
+  },
+  "cookieConsent": {
+    "title": "We use cookies",
+    "description": "We use our own cookies for essential site functionality and, with your consent, analytics cookies to understand how you use it. You can accept, reject, or customize your choice.",
+    "acceptAll": "Accept all",
+    "rejectAll": "Reject non-essential",
+    "customize": "Customize",
+    "save": "Save preferences",
+    "necessary": "Necessary (always active)",
+    "necessaryDesc": "Essential for the site to function properly.",
+    "analytics": "Analytics",
+    "analyticsDesc": "Help us understand site usage in an aggregated, anonymous way.",
+    "policyLink": "More information in our cookie policy"
+  },
+  "languageSwitcher": {
+    "label": "Language"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "updated": "Last updated: July 24, 2026"
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "updated": "Last updated: July 24, 2026"
+    },
+    "legalNotice": {
+      "title": "Legal Notice",
+      "updated": "Last updated: July 24, 2026"
+    }
+  }
+}

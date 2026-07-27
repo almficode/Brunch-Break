@@ -1,0 +1,9 @@
+{
+  "name": "the-brunch-break",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Web estática de The Brunch Break (HTML/CSS/JS sin build step) con una función serverless en api/chat.js para el asistente de IA.",
+  "engines": {
+    "node": ">=18"
+  }
+}

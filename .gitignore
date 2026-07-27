@@ -1,0 +1,13 @@
+# macOS / editor
+.DS_Store
+*.swp
+
+# Node.js project archivado (tiene su propio .gitignore)
+nextjs-version-backup/node_modules
+nextjs-version-backup/.next
+
+# Vercel / variables de entorno (la API key de OpenAI NUNCA debe subirse aquí)
+.vercel
+.env
+.env.local
+node_modules

@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "The Brunch Break — Brunch, Fit Bakery & Coffee en Arrecife, Lanzarote",
+    "description": "The Brunch Break es una cafetería de brunch en Arrecife, Lanzarote. Bakery artesanal, coffee de especialidad y platos fit en un espacio pensado para pausar el día. Reserva o pide para llevar.",
+    "keywords": "brunch Lanzarote, brunch Arrecife, cafetería Lanzarote, desayunos Arrecife, fit bakery Lanzarote, coffee shop Canarias, The Brunch Break"
+  },
+  "nav": {
+    "story": "Historia",
+    "philosophy": "Filosofía",
+    "specialties": "Especialidades",
+    "gallery": "Galería",
+    "menu": "Carta",
+    "reviews": "Opiniones",
+    "instagram": "Instagram",
+    "location": "Cómo llegar",
+    "contact": "Contacto",
+    "menuCta": "Ver carta",
+    "reserveCta": "Reservar"
+  },
+  "hero": {
+    "eyebrow": "Arrecife · Lanzarote",
+    "headlineWords": ["Tu", "brunch,", "tu", "momento."],
+    "subtitle": "Bakery artesanal, coffee de especialidad y platos fit en el corazón de Arrecife. Un lugar para pausar el día, despacio.",
+    "ctaMenu": "Ver la carta",
+    "ctaContact": "Reservar mesa",
+    "scrollHint": "Desliza para descubrir"
+  },
+  "story": {
+    "eyebrow": "Nuestra historia",
+    "title": "Nacimos de una idea muy simple",
+    "paragraphs": [
+      "The Brunch Break nace en Arrecife con una obsesión: convertir el brunch en un ritual, no en una prisa. Cada mesa es una pausa; cada plato, una razón para quedarse un poco más.",
+      "Desde el primer café hasta el último bizcocho de la vitrina, todo se piensa y se hornea con el mismo cuidado: ingredientes reales, recetas propias y un espacio cálido donde el tiempo corre distinto."
+    ],
+    "founderLabel": "Fundadora & CEO",
+    "founderName": "Miss Loan Ho",
+    "founderRole": "Creadora de conceptos, marcas y experiencias",
+    "stats": [
+      { "value": "7:30–17:00", "label": "Todos los días" },
+      { "value": "11K+", "label": "Comunidad en Instagram" },
+      { "value": "100%", "label": "Recetas propias" }
+    ]
+  },
+  "philosophy": {
+    "eyebrow": "Filosofía",
+    "title": "Comer bien, sin renunciar al placer",
+    "intro": "Fit no significa soso. Nuestra cocina equilibra ingredientes reales, técnica de bakery y un punto goloso que no pide perdón.",
+    "pillars": [
+      {
+        "title": "Ingredientes reales",
+        "description": "Producto fresco, de proveedores locales siempre que es posible, sin atajos ni ultraprocesados."
+      },
+      {
+        "title": "Horneado propio",
+        "description": "Bakery artesanal desde primera hora: masas fermentadas, bizcochos y dulces recién salidos de nuestro horno."
+      },
+      {
+        "title": "Equilibrio fit",
+        "description": "Opciones pensadas para sentar bien: proteína, fibra y sabor, sin sacrificar ni una cosa ni la otra."
+      },
+      {
+        "title": "Ritual de pausa",
+        "description": "Un espacio diseñado para desconectar: luz natural, plantas y tiempo para disfrutar sin mirar el reloj."
+      }
+    ]
+  },
+  "specialties": {
+    "eyebrow": "Especialidades",
+    "title": "Lo que nos hace The Brunch Break",
+    "items": [
+      {
+        "title": "Brunch de autor",
+        "description": "Huevos, tostas y combinaciones propias que reinventan el brunch clásico con acento canario."
+      },
+      {
+        "title": "Fit & Go",
+        "description": "Bowls y almuerzos ligeros para llevar, listos entre las 8:30 y las 15:00, pensados para tu ritmo."
+      },
+      {
+        "title": "Bakery & Coffee",
+        "description": "Café de especialidad y repostería de vitrina horneada cada día en casa."
+      },
+      {
+        "title": "Catering & Eventos",
+        "description": "Llevamos el brunch a tus celebraciones y eventos privados, a medida."
+      }
+    ]
+  },
+  "featured": {
+    "eyebrow": "Productos destacados",
+    "title": "Directo de nuestra vitrina",
+    "products": [
+      {
+        "name": "Donuts de temporada",
+        "tag": "Party Donuts",
+        "description": "Ediciones limitadas, glaseados originales y sabores que cambian con el calendario."
+      },
+      {
+        "name": "Bowl Fit&Go",
+        "tag": "Almuerzos fit",
+        "description": "Proteína, vegetales de temporada y una salsa propia. Para llevar en minutos."
+      },
+      {
+        "name": "Tostas de autor",
+        "tag": "Brunch",
+        "description": "Pan de masa madre propio, toppings de temporada y presentación de vitrina."
+      },
+      {
+        "name": "Coffee de especialidad",
+        "tag": "Bakery & Coffee",
+        "description": "Granos seleccionados, extracción cuidada y leches vegetales disponibles."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Galería",
+    "title": "Un vistazo a nuestro día a día",
+    "subtitle": "Momentos reales de sala, barra y vitrina — la imagen de marca que compartimos cada día en Instagram.",
+    "cta": "Síguenos en Instagram"
+  },
+  "menu": {
+    "eyebrow": "La carta",
+    "title": "Todo lo que horneamos, servimos y preparamos",
+    "description": "Nuestra carta completa vive en un smartmenu siempre actualizado: precios, alérgenos y disponibilidad al día.",
+    "categories": [
+      { "name": "Brunch", "description": "Huevos, tostas y platos de autor" },
+      { "name": "Fit & Go", "description": "Bowls y almuerzos saludables" },
+      { "name": "Bakery", "description": "Repostería y horneado del día" },
+      { "name": "Coffee", "description": "Café de especialidad y bebidas" }
+    ],
+    "ctaLabel": "Abrir la carta completa",
+    "ctaNote": "Se abre en una pestaña nueva · smartmenu.agorapos.com"
+  },
+  "reviews": {
+    "eyebrow": "Opiniones",
+    "title": "Lo que dice quien ya ha venido",
+    "items": [
+      {
+        "quote": "El sitio perfecto para desayunar sin prisa. El brunch fit está buenísimo y se nota el mimo en cada plato.",
+        "author": "Clienta habitual",
+        "source": "Google"
+      },
+      {
+        "quote": "Ambiente precioso, café de especialidad y una vitrina que engancha. Repetimos siempre que estamos en Lanzarote.",
+        "author": "Visitante de la isla",
+        "source": "Instagram"
+      },
+      {
+        "quote": "Ideal para trabajar una mañana con buen café al lado. El servicio es cercano y rápido.",
+        "author": "Cliente local",
+        "source": "Google"
+      }
+    ],
+    "placeholderNote": "Reseñas de ejemplo — sustituir por opiniones reales verificadas (Google Business, TripAdvisor) antes de publicar."
+  },
+  "instagram": {
+    "eyebrow": "Instagram",
+    "title": "Síguenos de cerca",
+    "handle": "@the_brunch_break",
+    "followers": "11K+ seguidores",
+    "cta": "Abrir Instagram",
+    "placeholderNote": "Galería preparada para sustituir por imágenes y vídeos reales autorizados por el propietario de @the_brunch_break."
+  },
+  "location": {
+    "eyebrow": "Cómo llegar",
+    "title": "Te esperamos en Arrecife",
+    "addressLabel": "Dirección",
+    "address": "Arrecife, Lanzarote, Islas Canarias, España",
+    "addressNote": "Dirección exacta pendiente de confirmar — sustituir por la dirección completa (calle y número).",
+    "hoursLabel": "Horario",
+    "hours": "Lunes a domingo · 7:30 – 17:00",
+    "mapCta": "Ver en Google Maps"
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Hablemos",
+    "subtitle": "Reservas, catering, eventos o simplemente para saludar — estamos a un mensaje de distancia.",
+    "whatsappLabel": "WhatsApp",
+    "whatsappNote": "Número pendiente de confirmar por el cliente",
+    "emailLabel": "Email",
+    "emailNote": "Correo pendiente de confirmar por el cliente",
+    "phoneLabel": "Teléfono",
+    "phoneNote": "Teléfono pendiente de confirmar por el cliente",
+    "instagramLabel": "Instagram",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje",
+      "success": "¡Gracias! Te responderemos lo antes posible.",
+      "namePlaceholder": "¿Cómo te llamas?",
+      "emailPlaceholder": "tu@email.com",
+      "messagePlaceholder": "Cuéntanos qué necesitas..."
+    }
+  },
+  "footer": {
+    "tagline": "Tu brunch, tu momento.",
+    "rights": "Todos los derechos reservados.",
+    "madeWith": "Diseñado con calma en Lanzarote.",
+    "legalLinks": "Legal",
+    "privacy": "Política de privacidad",
+    "cookies": "Política de cookies",
+    "legalNotice": "Aviso legal",
+    "backToTop": "Volver arriba"
+  },
+  "cookieConsent": {
+    "title": "Usamos cookies",
+    "description": "Utilizamos cookies propias para el funcionamiento esencial del sitio y, con tu consentimiento, cookies analíticas para entender cómo lo usas. Puedes aceptarlas, rechazarlas o personalizar tu elección.",
+    "acceptAll": "Aceptar todas",
+    "rejectAll": "Rechazar no esenciales",
+    "customize": "Personalizar",
+    "save": "Guardar preferencias",
+    "necessary": "Necesarias (siempre activas)",
+    "necessaryDesc": "Imprescindibles para que el sitio funcione correctamente.",
+    "analytics": "Analíticas",
+    "analyticsDesc": "Nos ayudan a entender el uso del sitio de forma agregada y anónima.",
+    "policyLink": "Más información en nuestra política de cookies"
+  },
+  "languageSwitcher": {
+    "label": "Idioma"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Política de Privacidad",
+      "updated": "Última actualización: 24 de julio de 2026"
+    },
+    "cookies": {
+      "title": "Política de Cookies",
+      "updated": "Última actualización: 24 de julio de 2026"
+    },
+    "legalNotice": {
+      "title": "Aviso Legal",
+      "updated": "Última actualización: 24 de julio de 2026"
+    }
+  }
+}

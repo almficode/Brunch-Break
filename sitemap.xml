@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://thebrunchbreak.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://thebrunchbreak.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebrunchbreak.com/en/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://thebrunchbreak.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://thebrunchbreak.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebrunchbreak.com/en/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://thebrunchbreak.com/fidelizacion</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://thebrunchbreak.com/fidelizacion" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebrunchbreak.com/en/loyalty" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thebrunchbreak.com/en/loyalty</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://thebrunchbreak.com/fidelizacion" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebrunchbreak.com/en/loyalty" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thebrunchbreak.com/legal/privacidad</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://thebrunchbreak.com/legal/cookies</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://thebrunchbreak.com/legal/aviso-legal</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://thebrunchbreak.com/en/legal/privacy-policy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://thebrunchbreak.com/en/legal/cookies-policy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://thebrunchbreak.com/en/legal/legal-notice</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
