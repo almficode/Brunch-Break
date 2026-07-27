@@ -207,6 +207,12 @@ html.js .reveal-right.is-visible { opacity: 1; transform: translateX(0); }
    pasa de un tono apagado al tinta plena — las letras no solo aparecen,
    se van "oscureciendo" a su color definitivo a medida que entran. */
 .split-words { display: flex; flex-wrap: wrap; }
+/* .split-words es un flex container (para animar palabra a palabra), y un
+   flex container ignora el text-align del padre para posicionar sus
+   propios hijos — por eso un título corto dentro de .section-head.center
+   se quedaba pegado a la izquierda en vez de centrado. Se nota más cuanto
+   más corto es el título (el hueco sobrante queda a la derecha). */
+.section-head.center .split-words { justify-content: center; }
 .split-word { overflow: hidden; margin-right: 0.28em; padding-block: 0.08em; }
 html.js .split-word span {
   display: inline-block;
@@ -671,35 +677,47 @@ html.js .split-word.is-visible span { transform: translateY(0); opacity: 1; colo
 .apple-card-title { margin-top: 0.5rem; font-family: var(--font-display); font-size: 1.35rem; line-height: 1.25; color: #fff; max-width: 15rem; }
 .apple-cards-hint { margin-top: 1rem; text-align: center; font-size: 0.72rem; color: rgba(28,23,18,0.4); }
 
-/* ---------- Reviews (marquee, se mueve hacia la derecha sin parar) ---------- */
-.review-marquee-wrap { margin-top: 3.5rem; overflow: hidden; }
+/* ---------- Reviews (dos filas en marquee, cada una en un sentido) ----------
+   Dos filas compactas en vez de una sola tarjeta grande, para que entre
+   las dos ocupen lo mismo que antes ocupaba una — tarjeta horizontal
+   pequeña, sin el hueco extra de icono+pie separados. */
+.review-marquee-wrap { margin-top: 3.5rem; overflow: hidden; display: flex; flex-direction: column; gap: 0.85rem; }
 .review-marquee-track {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   width: max-content;
-  animation: review-marquee 34s linear infinite;
 }
+.review-marquee-track.row-right { animation: review-marquee-right 30s linear infinite; }
+.review-marquee-track.row-left { animation: review-marquee-left 34s linear infinite; }
 .review-marquee-wrap:hover .review-marquee-track { animation-play-state: paused; }
-@keyframes review-marquee {
+@keyframes review-marquee-right {
   from { transform: translateX(-50%); }
   to { transform: translateX(0); }
 }
+@keyframes review-marquee-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
 .review-card {
-  display: flex; flex-direction: column;
-  width: 340px; flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  width: 320px;
+  flex-shrink: 0;
   border: 1px solid rgba(28,23,18,0.1);
-  border-radius: 1.5rem;
-  padding: 2rem;
-  background: rgba(255,255,255,0.4);
-  box-shadow: 0 20px 50px -35px rgba(28,23,18,0.4);
+  border-radius: 1rem;
+  padding: 0.85rem 1.1rem;
+  background: rgba(255,255,255,0.5);
+  box-shadow: 0 12px 28px -22px rgba(28,23,18,0.4);
   transition: transform 0.3s;
 }
-.review-card:hover { transform: translateY(-6px); }
-.review-card svg.quote { width: 28px; height: 28px; color: var(--honey); }
-.review-card blockquote { margin-top: 1.25rem; flex: 1; font-family: var(--font-display); font-size: 1.15rem; line-height: 1.4; text-align: justify; }
-.review-foot { margin-top: 1.5rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(28,23,18,0.1); padding-top: 1rem; }
-.review-foot .stars { display: flex; align-items: center; gap: 2px; font-size: 0.75rem; color: rgba(28,23,18,0.45); }
-.review-foot .stars svg { width: 14px; height: 14px; color: var(--honey); fill: var(--honey); }
+.review-card:hover { transform: translateY(-4px); }
+.review-card svg.quote { width: 18px; height: 18px; flex-shrink: 0; color: var(--honey); }
+.review-card-body { min-width: 0; }
+.review-card blockquote { font-family: var(--font-display); font-size: 0.8rem; line-height: 1.3; text-align: justify; }
+.review-foot { margin-top: 0.35rem; display: flex; align-items: center; gap: 0.5rem; font-size: 0.68rem; }
+.review-foot .stars { display: flex; align-items: center; gap: 2px; color: rgba(28,23,18,0.45); }
+.review-foot .stars svg { width: 10px; height: 10px; color: var(--honey); fill: var(--honey); }
 .tripadvisor-cta { display: flex; justify-content: center; margin-top: 2.5rem; }
 .placeholder-note { margin-top: 2rem; text-align: center; font-size: 0.75rem; font-style: italic; color: rgba(28,23,18,0.35); }
 
