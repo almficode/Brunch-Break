@@ -1180,11 +1180,11 @@ html.js .split-word.is-visible span { transform: translateY(0); opacity: 1; colo
 /* ---------- Galería circular (arrastrar para girar) ---------- */
 .circle-gallery {
   position: relative;
-  height: 60vh;
-  min-height: 420px;
-  max-height: 560px;
+  height: 78vh;
+  min-height: 560px;
+  max-height: 760px;
   margin-top: 3rem;
-  perspective: 1600px;
+  perspective: 2000px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1195,8 +1195,8 @@ html.js .split-word.is-visible span { transform: translateY(0); opacity: 1; colo
 .circle-gallery.is-dragging { cursor: grabbing; }
 .circle-gallery-stage {
   position: relative;
-  width: 260px;
-  height: 340px;
+  width: 420px;
+  height: 520px;
   transform-style: preserve-3d;
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: transform;
@@ -1215,7 +1215,7 @@ html.js .split-word.is-visible span { transform: translateY(0); opacity: 1; colo
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 44px; height: 44px;
+  width: 48px; height: 48px;
   border-radius: 999px;
   background: var(--ink);
   color: var(--cream);
@@ -1227,7 +1227,14 @@ html.js .split-word.is-visible span { transform: translateY(0); opacity: 1; colo
 .circle-gallery-nav:hover { background: var(--rust); }
 .circle-gallery-nav.prev { left: 1rem; }
 .circle-gallery-nav.next { right: 1rem; }
+@media (max-width: 1024px) {
+  .circle-gallery { height: 66vh; min-height: 480px; max-height: 620px; }
+  .circle-gallery-stage { width: 320px; height: 400px; }
+}
 @media (max-width: 640px) {
-  .circle-gallery { height: 50vh; min-height: 340px; }
-  .circle-gallery-stage { width: 190px; height: 260px; }
+  .circle-gallery { height: 52vh; min-height: 380px; max-height: 480px; }
+  .circle-gallery-stage { width: 220px; height: 290px; }
+  .circle-gallery-nav { width: 40px; height: 40px; }
+  .circle-gallery-nav.prev { left: 0.5rem; }
+  .circle-gallery-nav.next { right: 0.5rem; }
 }
