@@ -30,6 +30,20 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thebrunchbreak.com/galeria</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://thebrunchbreak.com/galeria" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebrunchbreak.com/en/gallery" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thebrunchbreak.com/en/gallery</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://thebrunchbreak.com/galeria" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://thebrunchbreak.com/en/gallery" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thebrunchbreak.com/legal/privacidad</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
