@@ -1197,8 +1197,8 @@ html.js .split-word.is-visible span { transform: translateY(0); opacity: 1; colo
 }
 .gallery-marquee-grid {
   display: grid;
-  grid-template-columns: repeat(8, 130px);
-  gap: 12px;
+  grid-template-columns: repeat(6, 210px);
+  gap: 16px;
   transform: rotateX(50deg) rotateZ(-35deg);
   transform-origin: center center;
   flex-shrink: 0;
@@ -1206,7 +1206,7 @@ html.js .split-word.is-visible span { transform: translateY(0); opacity: 1; colo
 .gallery-marquee-col {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
   animation: gallery-marquee-up 30s linear infinite;
 }
 .gallery-marquee-col.down { animation-name: gallery-marquee-down; }
@@ -1215,15 +1215,13 @@ html.js .split-word.is-visible span { transform: translateY(0); opacity: 1; colo
 .gallery-marquee-col:nth-child(4) { animation-duration: 40s; }
 .gallery-marquee-col:nth-child(5) { animation-duration: 32s; }
 .gallery-marquee-col:nth-child(6) { animation-duration: 38s; }
-.gallery-marquee-col:nth-child(7) { animation-duration: 28s; }
-.gallery-marquee-col:nth-child(8) { animation-duration: 42s; }
 .gallery-marquee-col img {
   display: block;
-  width: 130px;
+  width: 210px;
   aspect-ratio: 3 / 4;
   object-fit: cover;
-  border-radius: 0.6rem;
-  box-shadow: 0 10px 22px -10px rgba(0,0,0,0.6);
+  border-radius: 0.85rem;
+  box-shadow: 0 14px 28px -12px rgba(0,0,0,0.6);
 }
 @keyframes gallery-marquee-up {
   from { transform: translateY(0); }
@@ -1233,18 +1231,17 @@ html.js .split-word.is-visible span { transform: translateY(0); opacity: 1; colo
   from { transform: translateY(-50%); }
   to { transform: translateY(0); }
 }
-.gallery-marquee-wrap:hover .gallery-marquee-col { animation-play-state: paused; }
 @media (max-width: 1024px) {
   .gallery-marquee-wrap { height: 64vh; min-height: 460px; max-height: 640px; }
-  .gallery-marquee-grid { grid-template-columns: repeat(8, 100px); gap: 10px; }
-  .gallery-marquee-col { gap: 10px; }
-  .gallery-marquee-col img { width: 100px; border-radius: 0.5rem; }
+  .gallery-marquee-grid { grid-template-columns: repeat(6, 160px); gap: 13px; }
+  .gallery-marquee-col { gap: 13px; }
+  .gallery-marquee-col img { width: 160px; border-radius: 0.7rem; }
 }
 @media (max-width: 640px) {
   .gallery-marquee-wrap { height: 52vh; min-height: 380px; max-height: 520px; border-radius: 1.25rem; }
-  .gallery-marquee-grid { grid-template-columns: repeat(8, 66px); gap: 7px; transform: rotateX(50deg) rotateZ(-35deg); }
-  .gallery-marquee-col { gap: 7px; }
-  .gallery-marquee-col img { width: 66px; border-radius: 0.4rem; }
+  .gallery-marquee-grid { grid-template-columns: repeat(6, 100px); gap: 9px; transform: rotateX(50deg) rotateZ(-35deg); }
+  .gallery-marquee-col { gap: 9px; }
+  .gallery-marquee-col img { width: 100px; border-radius: 0.5rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   .gallery-marquee-col { animation: none; }
