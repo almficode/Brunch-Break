@@ -18,6 +18,7 @@
       item.style.transform = "rotateY(" + (i * angleStep) + "deg) translateZ(" + radius + "px)";
     });
 
+    var TILT_DEG = 28;
     var currentAngle = 0;
     var isDragging = false;
     var startX = 0;
@@ -25,8 +26,9 @@
 
     function setAngle(angle) {
       currentAngle = angle;
-      stage.style.transform = "rotateY(" + currentAngle + "deg)";
+      stage.style.transform = "rotateX(" + TILT_DEG + "deg) rotateY(" + currentAngle + "deg)";
     }
+    setAngle(0);
 
     function onPointerDown(e) {
       isDragging = true;

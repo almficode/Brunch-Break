@@ -1180,11 +1180,12 @@ html.js .split-word.is-visible span { transform: translateY(0); opacity: 1; colo
 /* ---------- Galería circular (arrastrar para girar) ---------- */
 .circle-gallery {
   position: relative;
-  height: 78vh;
-  min-height: 560px;
-  max-height: 760px;
+  height: 66vh;
+  min-height: 500px;
+  max-height: 640px;
   margin-top: 3rem;
-  perspective: 2000px;
+  perspective: 1500px;
+  perspective-origin: 50% 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1195,8 +1196,8 @@ html.js .split-word.is-visible span { transform: translateY(0); opacity: 1; colo
 .circle-gallery.is-dragging { cursor: grabbing; }
 .circle-gallery-stage {
   position: relative;
-  width: 420px;
-  height: 520px;
+  width: 190px;
+  height: 300px;
   transform-style: preserve-3d;
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: transform;
@@ -1205,9 +1206,9 @@ html.js .split-word.is-visible span { transform: translateY(0); opacity: 1; colo
 .circle-gallery-item {
   position: absolute;
   inset: 0;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 30px 60px -20px rgba(28,23,18,0.45);
+  box-shadow: 0 20px 45px -15px rgba(28,23,18,0.45);
   backface-visibility: hidden;
 }
 .circle-gallery-item img { width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
@@ -1228,12 +1229,12 @@ html.js .split-word.is-visible span { transform: translateY(0); opacity: 1; colo
 .circle-gallery-nav.prev { left: 1rem; }
 .circle-gallery-nav.next { right: 1rem; }
 @media (max-width: 1024px) {
-  .circle-gallery { height: 66vh; min-height: 480px; max-height: 620px; }
-  .circle-gallery-stage { width: 320px; height: 400px; }
+  .circle-gallery { height: 54vh; min-height: 420px; max-height: 520px; }
+  .circle-gallery-stage { width: 150px; height: 240px; }
 }
 @media (max-width: 640px) {
-  .circle-gallery { height: 52vh; min-height: 380px; max-height: 480px; }
-  .circle-gallery-stage { width: 220px; height: 290px; }
+  .circle-gallery { height: 42vh; min-height: 340px; max-height: 420px; }
+  .circle-gallery-stage { width: 110px; height: 175px; }
   .circle-gallery-nav { width: 40px; height: 40px; }
   .circle-gallery-nav.prev { left: 0.5rem; }
   .circle-gallery-nav.next { right: 0.5rem; }
