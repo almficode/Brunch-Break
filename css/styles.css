@@ -385,31 +385,6 @@ html.js .split-word.is-visible span { transform: translateY(0); opacity: 1; colo
   inset: 0;
   background: linear-gradient(to top, var(--ink), rgba(28,23,18,0.5) 55%, rgba(28,23,18,0.2));
 }
-/* Cortina de apertura al cargar: se queda cerrada (cubriendo el Hero) hasta
-   que js/main.js añade .is-open — justo cuando el vídeo ya tiene datos para
-   reproducirse. Así se revela directamente el vídeo, nunca la foto de
-   respaldo seguida de un cambio brusco. Sin JS (html sin la clase .js) no
-   se muestra nunca, para no quedar cerrada de forma permanente. */
-.hero-curtain {
-  position: absolute;
-  inset: 0;
-  z-index: 6;
-  display: none;
-  pointer-events: none;
-}
-html.js .hero-curtain { display: flex; }
-.hero-curtain span {
-  flex: 1 1 50%;
-  background: var(--ink);
-  transition: transform 1.15s cubic-bezier(0.76, 0, 0.24, 1);
-}
-.hero-curtain span:first-child { transform-origin: left center; }
-.hero-curtain span:last-child { transform-origin: right center; }
-.hero-curtain.is-open span:first-child { transform: translateX(-100%); }
-.hero-curtain.is-open span:last-child { transform: translateX(100%); }
-@media (prefers-reduced-motion: reduce) {
-  html.js .hero-curtain { display: none; }
-}
 .hero-inner {
   position: relative;
   z-index: 2;
@@ -833,6 +808,54 @@ html.js .hero-curtain { display: flex; }
 .cookie-actions .btn { padding: 0.6rem 1.1rem; font-size: 0.75rem; }
 .cookie-policy-link { margin-top: 0.75rem; font-size: 0.75rem; }
 .cookie-policy-link a { text-decoration: underline; text-underline-offset: 2px; }
+
+/* ---------- Pantalla de carga inicial ---------- */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ink);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.page-loader.is-hidden { opacity: 0; pointer-events: none; }
+.page-loader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+.page-loader-name {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  color: var(--cream);
+  letter-spacing: 0.02em;
+}
+.page-loader-bar {
+  width: 200px;
+  height: 2px;
+  background: rgba(251,246,238,0.2);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.page-loader-bar span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--honey);
+  transform: translateX(-100%);
+  animation: page-loader-fill 1s linear forwards;
+}
+@keyframes page-loader-fill {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-loader-bar span { animation: none; transform: translateX(0); }
+}
 
 /* ---------- Scroll progress + cursor ---------- */
 #scroll-progress {

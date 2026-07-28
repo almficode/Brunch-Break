@@ -272,16 +272,26 @@
     });
   }
 
-  /* ---------------- Tilt 3D del Hero (sigue al cursor) ---------------- */
-  /* ---------------- Apertura del Hero (cortina + vídeo) ----------------
-     La cortina solo se abre cuando el vídeo ya tiene datos para reproducirse
-     (o, como red de seguridad, pasado un tiempo máximo). Así se revela
-     directamente el contenido final y nunca la foto de respaldo antigua
+  /* ---------------- Pantalla de carga inicial ----------------
+     Se muestra un segundo (nombre + barra) por encima de todo mientras el
+     vídeo del Hero termina de cargar detrás; así la revelación es siempre
+     directa sobre el contenido final, nunca sobre la foto de respaldo
      seguida de un cambio brusco al vídeo. */
+  function initPageLoader() {
+    var loader = document.getElementById("page-loader");
+    if (!loader) return;
+    setTimeout(function () {
+      loader.classList.add("is-hidden");
+      setTimeout(function () {
+        if (loader.parentNode) loader.parentNode.removeChild(loader);
+      }, 600);
+    }, 1000);
+  }
+
+  /* ---------------- Vídeo del Hero: aparece con fundido sobre la foto ---------------- */
   function initHeroReady() {
     var video = document.querySelector(".hero-video");
     var fallback = document.querySelector(".hero-fallback");
-    var curtain = document.querySelector(".hero-curtain");
     if (!video || !fallback) return;
 
     var ready = false;
@@ -289,7 +299,6 @@
       if (ready) return;
       ready = true;
       fallback.classList.add("is-faded");
-      if (curtain) curtain.classList.add("is-open");
     }
     video.addEventListener("loadeddata", markReady, { once: true });
     video.addEventListener("playing", markReady, { once: true });
@@ -489,6 +498,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    initPageLoader();
     initSplitText();
     initReveal();
     initHeader();
