@@ -196,21 +196,6 @@
     update();
   }
 
-  /* ---------------- Cursor personalizado ---------------- */
-  function initCursor() {
-    var dot = document.getElementById("cursor-dot");
-    if (!dot || isCoarsePointer || prefersReducedMotion) return;
-
-    document.addEventListener("mousemove", function (e) {
-      var target = e.target.closest("[data-cursor]");
-      var size = target ? 52 : 10;
-      dot.style.width = size + "px";
-      dot.style.height = size + "px";
-      dot.style.transform =
-        "translate(" + (e.clientX - size / 2) + "px," + (e.clientY - size / 2) + "px)";
-    });
-  }
-
   /* ---------------- Botones magnéticos ---------------- */
   function initMagnetic() {
     if (isCoarsePointer || prefersReducedMotion) return;
@@ -288,6 +273,26 @@
   }
 
   /* ---------------- Tilt 3D del Hero (sigue al cursor) ---------------- */
+  /* ---------------- Transición suave foto -> vídeo del Hero ----------------
+     El <video> tarda un instante en descargar/decodificar el primer frame;
+     sin esto se ve un corte brusco entre la foto de respaldo y el vídeo. */
+  function initHeroVideoFade() {
+    var video = document.querySelector(".hero-video");
+    var fallback = document.querySelector(".hero-fallback");
+    if (!video || !fallback) return;
+
+    var revealed = false;
+    function reveal() {
+      if (revealed) return;
+      revealed = true;
+      fallback.classList.add("is-faded");
+    }
+    video.addEventListener("loadeddata", reveal, { once: true });
+    video.addEventListener("playing", reveal, { once: true });
+    if (video.readyState >= 2) reveal();
+    setTimeout(reveal, 1200);
+  }
+
   function initHeroTilt() {
     if (isCoarsePointer || prefersReducedMotion) return;
     var hero = document.querySelector(".hero");
@@ -484,10 +489,10 @@
     initReveal();
     initHeader();
     initScrollProgress();
-    initCursor();
     initMagnetic();
     initCookieConsent();
     initContactForm();
+    initHeroVideoFade();
     initHeroTilt();
     init3DCards();
     initSmoothScrollAndGsap();
