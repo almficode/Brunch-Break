@@ -273,24 +273,28 @@
   }
 
   /* ---------------- Tilt 3D del Hero (sigue al cursor) ---------------- */
-  /* ---------------- Transición suave foto -> vídeo del Hero ----------------
-     El <video> tarda un instante en descargar/decodificar el primer frame;
-     sin esto se ve un corte brusco entre la foto de respaldo y el vídeo. */
-  function initHeroVideoFade() {
+  /* ---------------- Apertura del Hero (cortina + vídeo) ----------------
+     La cortina solo se abre cuando el vídeo ya tiene datos para reproducirse
+     (o, como red de seguridad, pasado un tiempo máximo). Así se revela
+     directamente el contenido final y nunca la foto de respaldo antigua
+     seguida de un cambio brusco al vídeo. */
+  function initHeroReady() {
     var video = document.querySelector(".hero-video");
     var fallback = document.querySelector(".hero-fallback");
+    var curtain = document.querySelector(".hero-curtain");
     if (!video || !fallback) return;
 
-    var revealed = false;
-    function reveal() {
-      if (revealed) return;
-      revealed = true;
+    var ready = false;
+    function markReady() {
+      if (ready) return;
+      ready = true;
       fallback.classList.add("is-faded");
+      if (curtain) curtain.classList.add("is-open");
     }
-    video.addEventListener("loadeddata", reveal, { once: true });
-    video.addEventListener("playing", reveal, { once: true });
-    if (video.readyState >= 2) reveal();
-    setTimeout(reveal, 1200);
+    video.addEventListener("loadeddata", markReady, { once: true });
+    video.addEventListener("playing", markReady, { once: true });
+    if (video.readyState >= 2) markReady();
+    setTimeout(markReady, 1200);
   }
 
   function initHeroTilt() {
@@ -492,7 +496,7 @@
     initMagnetic();
     initCookieConsent();
     initContactForm();
-    initHeroVideoFade();
+    initHeroReady();
     initHeroTilt();
     init3DCards();
     initSmoothScrollAndGsap();

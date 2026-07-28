@@ -385,30 +385,30 @@ html.js .split-word.is-visible span { transform: translateY(0); opacity: 1; colo
   inset: 0;
   background: linear-gradient(to top, var(--ink), rgba(28,23,18,0.5) 55%, rgba(28,23,18,0.2));
 }
-/* Cortina de apertura al cargar: 100% CSS, funciona sin JavaScript */
+/* Cortina de apertura al cargar: se queda cerrada (cubriendo el Hero) hasta
+   que js/main.js añade .is-open — justo cuando el vídeo ya tiene datos para
+   reproducirse. Así se revela directamente el vídeo, nunca la foto de
+   respaldo seguida de un cambio brusco. Sin JS (html sin la clase .js) no
+   se muestra nunca, para no quedar cerrada de forma permanente. */
 .hero-curtain {
   position: absolute;
   inset: 0;
   z-index: 6;
-  display: flex;
+  display: none;
   pointer-events: none;
 }
+html.js .hero-curtain { display: flex; }
 .hero-curtain span {
   flex: 1 1 50%;
   background: var(--ink);
+  transition: transform 1.15s cubic-bezier(0.76, 0, 0.24, 1);
 }
-.hero-curtain span:first-child {
-  animation: curtain-left 1.15s cubic-bezier(0.76, 0, 0.24, 1) 0.2s forwards;
-  transform-origin: left center;
-}
-.hero-curtain span:last-child {
-  animation: curtain-right 1.15s cubic-bezier(0.76, 0, 0.24, 1) 0.2s forwards;
-  transform-origin: right center;
-}
-@keyframes curtain-left { from { transform: translateX(0); } to { transform: translateX(-100%); } }
-@keyframes curtain-right { from { transform: translateX(0); } to { transform: translateX(100%); } }
+.hero-curtain span:first-child { transform-origin: left center; }
+.hero-curtain span:last-child { transform-origin: right center; }
+.hero-curtain.is-open span:first-child { transform: translateX(-100%); }
+.hero-curtain.is-open span:last-child { transform: translateX(100%); }
 @media (prefers-reduced-motion: reduce) {
-  .hero-curtain { display: none; }
+  html.js .hero-curtain { display: none; }
 }
 .hero-inner {
   position: relative;
